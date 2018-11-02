@@ -94,6 +94,15 @@ You can assume that the messages are decodable. For example, '001' is not allowe
 ### Solution
 [Py](solutions/question7.py)
 
+## 010
+
+This problem was asked by Apple.
+
+Implement a job scheduler which takes in a function f and an integer n, and calls f after n milliseconds.
+
+### Solution
+[Py](solutions/question10.py)
+
 ## 011
 
 This problem was asked by Twitter.
