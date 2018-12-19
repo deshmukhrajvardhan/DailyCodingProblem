@@ -42,7 +42,8 @@ class AutoComplete:
 #                 print(self.string)
                 if current_index == self.str_end_index:
                     print("words:{}".format(curr_level_dict[self.incomplete_string_list[current_index]][1:]))
-                self._fetch_auto_complete(current_index+1,curr_level_dict[self.incomplete_string_list[current_index]][0])
+                else:
+                    self._fetch_auto_complete(current_index+1,curr_level_dict[self.incomplete_string_list[current_index]][0])
             except KeyError:
                 print("No such Word")
         else:
@@ -56,4 +57,4 @@ if __name__ == '__main__':
     a1.make_entry("lo")
     a1.make_entry("loop")
     a1.make_entry("behold")
-    a1.fetch_auto_complete("ha")
+    a1.fetch_auto_complete("hik")
